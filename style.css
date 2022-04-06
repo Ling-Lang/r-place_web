@@ -1,11 +1,14 @@
+:root{
+    --background:   #22181C;
+}
 *{
     padding: 0px;
     margin: 0px;
+    background-color: var(--background);
 }
 
 #c_1{
-    border: 1px solid;
-    width: 200px;
-    height: 100px;
-    border-color: black;
+    background-color: white;
+    width: 1000px;
+    height:1000px;
 }
