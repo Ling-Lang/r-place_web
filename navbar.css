@@ -1,5 +1,10 @@
+:root{
+    --background:   #22181C;
+    --border:       #73BFB8;
+    --font:         'Verdana';
+}
 nav{
-    background: #22181C;
+    background: var(--background);
   }
   
   nav::after{
@@ -10,7 +15,7 @@ nav{
   }
   
   nav .logo{
-    font-family: 'Verdana';
+    font-family: var(--font);
     float: left;
     color: #FFF8F0;
     font-size: 27px;
@@ -42,21 +47,21 @@ nav{
   
   }
   nav ul li a:hover{
-    color: #73BFB8;
+    color: var(--border);
     border-radius: 5px;
-  box-shadow: 0 0 5px #73BFB8,
-              0 0 5px #73BFB8;
+  box-shadow: 0 0 5px var(--border),
+              0 0 5px var(--border);
   }
   
   nav ul ul li a:hover{
-    color: #73BFB8;
+    color: var(--border);
     box-shadow: none;
   }
   
   nav ul ul{
     position: absolute;
     top: 80px;
-    border-top: 3px solid #73BFB8;
+    border-top: 3px solid var(--border);
      opacity: 0;
      visibility: hidden;
      transition: top .3s;
